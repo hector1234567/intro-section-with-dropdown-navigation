@@ -382,7 +382,7 @@ body {
 
     .content {
         width: 100%;
-        text-align: center;
+        align-items: center;
         margin-bottom: 5rem;
     }
 
@@ -404,12 +404,11 @@ body {
         font-size: 1.7rem;
         margin-top: 2.2rem;
         margin-bottom: 2.2rem;
+        text-align: center;
     }
 
     .content__client-logos {
-        width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        width: 95%;
     }
 
     .content__client-logos img{
