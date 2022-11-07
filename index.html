@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1>snap</h1>
+    </div>
+    <div class="menu">
+      <a href="#" class="menu__option menu__option--features">Features<div class="menu__arrow"></div></a>
+      <a href="#" class="menu__option menu__option--company">Company<div class="menu__arrow"></div></a>
+      <a href="#" class="menu__option">Careers</a>
+      <a href="#" class="menu__option">About</a>
+    </div>
+    <div class="user-links">
+      <div class="user-links__option">Login</div>
+      <div class="user-links__option user-links__option--border">Register</div>
+    </div>
+    <input type="checkbox" name="button-show-menu" id="button-show-menu">
+    <label for="button-show-menu" class="button-show-menu">
+      <div class="button-show-menu__line button-show-menu__line--1"></div>
+      <div class="button-show-menu__line button-show-menu__line--2"></div>
+      <div class="button-show-menu__line button-show-menu__line--3"></div>
+    </label>
+  </header>
+  <main class="main">
+    <section class="content">
+      <h2 class="content__title">Make remote work</h2>
+      <p class="content__text">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <a href="#" class="content__link">Learn more</a>
+      <div class="content__client-logos">
+        <img src="images/client-databiz.svg" alt="databiz">
+        <img src="images/client-audiophile.svg" alt="Audiophile">
+        <img src="images/client-meet.svg" alt="meet">
+        <img src="images/client-maker.svg" alt="maker">
+      </div>
+    </section>
+    <picture class="main__image">
+      <source media="(max-width: 740px)" srcset="./images/image-hero-mobile.png">
+      <img src="./images/image-hero-desktop.png" alt="your alt text">
+    </picture>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hector B</a>.
+  </footer>
+
+  <nav class="nav nav--features hidden">
+    <ul>
+      <li><a href="#"><img src="images/icon-todo.svg" alt>Todo List</a></li>
+      <li><a href="#"><img src="images/icon-calendar.svg" alt>Calendar</a></li>
+      <li><a href="#"><img src="images/icon-reminders.svg" alt>Reminders</a></li>
+      <li><a href="#"><img src="images/icon-planning.svg" alt>Planning</a></li>
+    </ul>
+  </nav>
+  <nav class="nav nav--company hidden">
+    <ul>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <nav class="side-nav width0">
+    <div class="menu">
+      <a href="#" class="menu__option menu__option--features">Features<div class="menu__arrow"></div></a>
+      <div class="nav nav--features hidden">
+        <ul>
+          <li><a href="#"><img src="images/icon-todo.svg" alt>Todo List</a></li>
+          <li><a href="#"><img src="images/icon-calendar.svg" alt>Calendar</a></li>
+          <li><a href="#"><img src="images/icon-reminders.svg" alt>Reminders</a></li>
+          <li><a href="#"><img src="images/icon-planning.svg" alt>Planning</a></li>
+        </ul>
+      </div>
+      <a href="#" class="menu__option menu__option--company">Company<div class="menu__arrow"></div></a>
+        <div class="nav nav--company hidden">
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      <div class="menu__option">Careers</div>
+      <div class="menu__option">About</div>
+    </div>
+    <div class="user-links">
+      <div class="user-links__option">Login</div>
+      <div class="user-links__option user-links__option--border">Register</div>
+    </div>
+  </nav>
+  <div class="shadow transparent"></div>
+</body>
+</html>
