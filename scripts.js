@@ -26,6 +26,8 @@ header.addEventListener('click', ev => {
         return;
     };
 
+    ev.preventDefault();
+
     if(link === features) {
         menuFeatures.classList.toggle('hiddenTop');
         features.querySelector('.menu__arrow').classList.toggle('rotate'); 
@@ -37,6 +39,7 @@ header.addEventListener('click', ev => {
 });
 
 sideNav.addEventListener('click', ev => {
+    ev.preventDefault();
     const link = ev.target.closest('a');
 
     if(link === featuresSide) {
