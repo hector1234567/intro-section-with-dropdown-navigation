@@ -191,6 +191,7 @@ body {
     z-index: 999;
 
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #button-show-menu {
