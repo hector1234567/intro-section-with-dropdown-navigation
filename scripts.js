@@ -27,10 +27,12 @@ header.addEventListener('click', ev => {
     };
 
     if(link === features) {
-        menuFeatures.classList.toggle('hidden');
+        menuFeatures.classList.toggle('hiddenTop');
+        features.querySelector('.menu__arrow').classList.toggle('rotate'); 
     }
     if(link === company) {
-        menuCompany.classList.toggle('hidden');
+        menuCompany.classList.toggle('hiddenTop');
+        company.querySelector('.menu__arrow').classList.toggle('rotate');
     }
 });
 
@@ -38,9 +40,9 @@ sideNav.addEventListener('click', ev => {
     const link = ev.target.closest('a');
 
     if(link === featuresSide) {
-        menuFeaturesSide.classList.toggle('hidden');
+        menuFeaturesSide.classList.toggle('height0');
     }
     if(link === companySide) {
-        menuCompanySide.classList.toggle('hidden');
+        menuCompanySide.classList.toggle('height0');
     }
 });
