@@ -1,0 +1,47 @@
+.nav {
+    font-family: Epilogue-Bold;
+    font-size: 1.4rem;
+    letter-spacing: -.03rem;
+    top: 6.5rem;
+
+    position: absolute;
+    background-color: var(--color-almost-white);
+    padding: 2rem;
+    box-shadow: 0px 0rem 2rem 7px rgba(0, 0, 0, .1);
+    border-radius: 2rem;
+
+    transition: all .5s ease-out;
+
+    & ul {
+        list-style: none;
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--color-medium-gray);
+        display: flex;
+        align-items: center;
+        height: 3rem;
+
+        &:hover {
+            color: var(--color-almost-black);
+        }
+    }
+
+    & img {
+        margin-right: 1rem;
+        padding-bottom: .3rem;
+    }
+
+    &--features {
+        left: 13.5rem;
+    }
+
+    &--company {
+        left: 31rem;
+    }
+
+    @media (max-width: 740px) {
+        transition: transform .2s ease, top .2s ease;
+    }
+}

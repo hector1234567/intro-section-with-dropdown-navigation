@@ -1,0 +1,51 @@
+.menu {
+    font-family: Epilogue-Bold;
+    font-size: 1.4rem;
+    display: flex;
+    margin: 0 6.5rem;
+    letter-spacing: -.03rem;
+
+    &__option {
+        text-decoration: none;
+        color: var(--color-medium-gray);
+        cursor: pointer;
+    
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: var(--color-almost-black);
+
+            & .menu__arrow {
+                background-color: var(--color-almost-black);
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__arrow {
+        width: 1.3rem;
+        height: .8rem;
+        margin-left: .5rem;
+        background-color: var(--color-medium-gray);
+        -webkit-mask: url(images/icon-arrow-down.svg) no-repeat center;
+        mask: url(images/icon-arrow-down.svg) no-repeat center;
+    }
+
+    @media (max-width: 740px) {
+        flex-direction: column;
+        font-size: 1.7rem;
+        display: none;
+    
+        & a {
+            white-space: nowrap;
+        }
+
+        &__option {
+            margin-bottom: 2rem;
+        }
+    }
+}

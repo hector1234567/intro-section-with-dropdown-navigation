@@ -1,0 +1,87 @@
+.content {
+    width: 51.5rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-family: Epilogue-Bold;
+        color: var(--color-almost-black);
+        font-size: 5rem;
+        width: 68rem;
+        margin-top: 10.7rem;
+    }
+
+    &__text {
+        margin-top: 5.2rem;
+        margin-bottom: 7rem;
+        line-height: 2.5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: var(--color-almost-black);
+        border: 2px solid var(--color-almost-black);
+        color: var(--color-almost-white);
+        padding: 1.5rem 2.7rem;
+        border-radius: 1.2rem;
+    
+        align-self: flex-start;
+    
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: var(--color-almost-white);
+            color: var(--color-almost-black);
+        }
+    }
+
+    &__client-logos {
+        display: flex;
+        margin-top: auto;
+        align-items: center;
+        justify-content: space-between;
+        width: 48rem;
+    }
+
+    @media (max-width: 740px) {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 5rem;
+    
+        &__title {
+            font-size: 2.5rem;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            margin-top: 4.7rem;
+            margin-bottom: 2.2rem;
+            white-space: nowrap;
+        }
+
+        &__text {
+            font-size: 1.7rem;
+            margin-top: 2.2rem;
+            margin-bottom: 2.2rem;
+            text-align: center;
+        }
+    
+        &__client-logos {
+            width: 95%;
+
+            & img{
+                max-width: 20%;
+            }
+        }
+    
+        &__link {
+            font-size: 1.7rem;
+            padding: 1.2rem 2rem;
+            border-radius: 1.2rem;
+            margin-bottom: 4.7rem;
+        
+            align-self: center;
+        }
+    }
+}

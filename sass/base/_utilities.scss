@@ -1,0 +1,38 @@
+.rotate {
+    transform: rotate(180deg);
+}
+
+.height0 {
+    height: 0 !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: -1 !important;
+    top: -5rem !important;
+    transform: scaleY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenTop {
+    opacity: 0 !important;
+    top: -17rem !important;
+}
+
+@media (max-width: 740px) {
+    .width0 {
+        width: 0 !important;
+    }
+    
+    .width0 * {
+        opacity: 0 !important;
+        display: none;
+    }
+    
+    .transparent {
+        opacity: 0 !important;
+        z-index: -1 !important;
+    }
+}

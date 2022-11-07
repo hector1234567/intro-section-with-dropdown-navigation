@@ -1,0 +1,42 @@
+.user-links {
+    font-family: Epilogue-Bold;
+    font-size: 1.4rem;
+    letter-spacing: -.03rem;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    &__option {
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+
+        &--border {
+            padding: 1.1rem 2.4rem;
+            border: 2px solid var(--color-medium-gray);
+            border-radius: 1.2rem;
+        }
+
+        &:hover {
+            color: var(--color-almost-black);
+            border-color: var(--color-almost-black);
+        }
+    }
+
+    @media (max-width: 740px) {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.7rem;
+    
+        &__option {
+            margin: 2rem 0 0 9rem !important;
+
+            &--border {
+                margin: 2rem 0 0 5rem !important;
+            }
+        }
+    }
+}

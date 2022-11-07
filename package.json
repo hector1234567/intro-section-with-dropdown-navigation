@@ -1,0 +1,28 @@
+{
+  "name": "intro-section-with-dropdown-navigation",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)",
+  "main": "scripts.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css",
+    "watch:sass": "node-sass sass/main.scss style.css -w",
+    "compress:css": "node-sass style.css style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hector1234567/intro-section-with-dropdown-navigation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hector1234567/intro-section-with-dropdown-navigation/issues"
+  },
+  "homepage": "https://github.com/hector1234567/intro-section-with-dropdown-navigation#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
